@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .body{
+            display: flex;
+        }
+        .header{
+            text-align: center;
+            font-size: large;
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+            background: lightblue;
+            border: 1px solid black;
+            top: 0;
+            position: sticky;
+        }
+        .nav{
+            display: block;
+            width: 300px;
+            background-color: rgb(212, 199, 199);
+        }
+        .name{
+            text-align: center;
+            font-size: 20px;
+            color: rgb(25, 25, 216);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        #myimage{
+            display: flex;
+            justify-content: center ;
+            height: 200px;
+            width: 200px;
+            border-radius: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4px;
+        }
+        h2{
+            text-align: left;
+            padding: 4px;
+            margin: 4px;
+            color: darkred;
+            text-decoration: underline;
+        }
+        p{
+            padding: 4px;
+            margin: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #pic{
+            height: 30px;
+            width: 30px;
+            margin: 4px;
+        }
+        a{
+            padding: 4px;
+            margin: 4px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover{
+            color: darkgreen;
+        }
+        .experience, .hello{
+            font-size: 15px;
+            width: 40%;
+            background-color: azure;
+        }
+        #edu{
+            color: darkred;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            padding: 10px;
+        }
+        .education, .work, .achievements{
+            padding: 10px;
+            margin: 10px;
+        }
+        .certificates{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">My Resume</div>
+    <div class="body">
+    <div class="nav">
+        <img id="myimage" src="WhatsApp Image.jpeg" alt="My image">
+        <div class="name">Avni Goyal</div>
+        <h2 id="about">About me</h2>
+        <p>I am a student presuing Btech Cse from UPES, my specilization is AIML and currently I am in my second year. I am motivated and goal oriented. My aim is to secure a responsible career opportunity where I can possibly showcase my skills and contribute towards the growth of the organization. I will not tolerate any excuses for complaining and will do everything in my power to meet your expectations.</p>
+        <hr>
+        <h2>Links</h2>
+        <img id="pic" src="https://blog.waalaxy.com/wp-content/uploads/2021/01/index.png" alt="linkedin"> <a href="https://www.linkedin.com/in/avni-goyal-89986a233/" target="_blank">Linkedin</a>
+        <br>
+        <img id="pic"src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"><a href="https://github.com/avnigoyal25">Github</a>
+        <br>
+        <img id="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/330px-HackerRank_Icon-1000px.png" alt="Hackerrank"><a href="https://www.hackerrank.com/avnigoyal2003">Hackerrank</a>
+    </div>
+    <div class="experience">
+        <div id="edu">Education</div>
+        <div class="education">
+        <div>Graduation</div>
+        <b>UPES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presuing Btech Cse- cgpa 9</b>
+        <div>2021-2025</div>
+        <br>
+        <div>Intermediate(12th)</div>
+        <b>St Mary's convent senior secondary school &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PCM with computer science 92.2%</b>
+        <div>2020-2021</div>
+        <br>
+        <div>High School(10th)</div>
+        <b>St Mary's convent senior secondary school &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;95.8%</b>
+        <div>2020-2021</div>
+        </div>
+        <hr>
+        <div id="edu">Work experience</div>
+        <div class="work">
+            <b>Summer Intern</b>
+            <div>Him Foundation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maintain database of various NGOs in Dehradun</div>
+            <div>June 2022-August 2022</div>
+            <br>
+            <b>Technical content writer</b>
+            <div>Gossipfunda&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;written number of technical articles regarding mobile phones, windows,mac</div>
+            <div>July 2022-August 2022</div>
+            <br>
+            <b>Web content writer</b>
+            <div>Netv4u&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;written number of biographies for their site</div>
+            <div>June 2022-July 2022</div>
+            <br>
+            <b>D2C Chief Igniter</b>
+            <div>2021-2022</div>
+            <br>
+            <b>UPES ACM & ACM-W Core committee member</b>
+            <br>
+            <b>Events core&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;organizing and managing various fun-tech events</b>
+            <div>2021-2022</div>
+            <b>Technical core&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <div>2021-present</div>
+            <br>
+        </div>
+    </div>
+    <div class="hello">
+        <div class="certificates">
+            <div id="edu">Certificates</div>
+            <ol>
+                <li>Engineering virtual program</li>
+                <br>
+                <li>Programming for everybody(getting started with python)</li>
+                <br>
+                <li>Foundations: Data, Data everywhere</li>
+                <br>
+                <br>
+                <br>
+            </ol>
+            <hr>
+        </div>
+        <div id="edu">Skills</div>
+        <div class="skills">
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>MS Word, powerpoint, excel</li>
+                <li>Communication</li>
+                <li>English speaking and writing</li>
+                <br>
+            </ul>
+        </div>
+        <hr>
+        <div id="edu">Achievements</div>
+        <div class="achievements">
+            <div>1) Secured 1st position in ACM 21 days of code event.</div>
+            <br>
+            <div>2) Completed 7-days bootcamp of python and data visulaization by Devtown.</div>
+        </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+</body>
+</html>
