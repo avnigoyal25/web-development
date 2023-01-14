@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif ; 
+}
+
+.hero{
+    position: relative;
+    background: #eff4fd;
+}
+nav{
+    display: flex;
+    width:84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.hello{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.hello h1{
+    font-size: 50px;
+    color:#212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+}
+
+.hello p{
+    color: #555;
+    line-height: 22px;
+}
+
+.hello a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+}
+
+.hello a:hover{
+    background-color: green;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images .my_pic{
+    height: 90%;
+}
+.images:hover .my_pic{
+    left:45%;
+}
+.about img{
+    height: 200px;
+    width: 200px;
+    margin-left: 140px;
+    margin-top: 50px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.about b{
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.about p{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    width:"50px";
+}
+body{
+    background-color: #eff4fd;
+}
+.about2 table{
+    column-gap: 60px;
+}
+#fuck_off{
+    margin-right: 40px;
+}
+#one{
+    margin-top: 50px;
+    margin-left: 130px;
+    float: left;
+}
+#one p{
+    width: 350px;
+    color: rgb(233, 11, 162);
+}
+#one h2{
+    color: rgb(181, 115, 28);
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#two{
+    float: left;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+#two h2{
+    margin-left: 20px;
+}
+#two ul{
+    margin-left: 20px;
+}
+#two ul li{
+    display: inline-block;
+    list-style: none;
+    background: rgb(73, 160, 95);
+    padding: 10px 18px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+}
+#avni{
+    margin-left: 700px;
+}
+#avni:hover{
+    color: red;
+}
+.service img{
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size:13px;
+    font-weight: 300;
+    border-right: 10px;
+    color: white;
+    height: 200px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+body{
+    background-color: #eff4fd;;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    width: 40%;
+    float: left;
+    margin-left: 30px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social a:hover{
+    color: green;
+    transform: translateY(-5px);
+}
+.btn{
+    background: #ff004f;
+    float: right;
+}
+.contact-right form{
+    width: 50%;
+    float: left;
+}
+form input, form textarea{
+    width: 50%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-right: 380px;
+    cursor: pointer;
+}
+.hero1{
+    position: relative;
+    background: #eff4fd;
+    margin-left: 700px;
+}
