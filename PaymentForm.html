@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"], select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 10px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        fieldset{
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .heading{
+            text-align: center;
+        }
+        input[type='submit']{
+            background-color: #4daea1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type='submit']:hover{
+            background-color: burlywood;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="heading">Payment form</h1>
+        <hr>
+        <h2>User information</h2>
+        <p>Name<sup>*</sup> <input type="text" name="name" required placeholder="Avni Goyal"></p>
+        <fieldset>
+            <legend>Gender<sup>*</sup></legend>
+            <p>
+                Male <input type="radio" name="gender" id="gender" required> Female <input type="radio" name="gender" id="gender" required> other <input type="radio" name="gender" id="gender" required>
+            </p>
+        </fieldset>
+        <p>Address:<textarea name="address" id="address" cols="100" rows="10" placeholder="enter your address"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email" placeholder="abc@gmail.com"></p>
+        <p>Pincode: <input type="number" id="number" name="number" placeholder="248198"></p>
+        <h2>payment information</h2>
+        <p> 
+            Accepted cards
+            <br>
+            <img src="https://www.sketchappsources.com/resources/source-image/credit-card-template-fscalambrino.jpg" alt="visa" height="50px" width="50px">
+            <img src="https://static.toiimg.com/thumb/msid-71833116,imgsize-72037,width-400,resizemode-4/71833116.jpg" alt="Rupay" height="50px" width="50px">
+            <img src="https://images.livemint.com/img/2022/07/26/600x338/Mastercard__1658822046213_1658822046339_1658822046339.jpg" alt="Mastercard" height="50px" width="50px">
+            <br>
+            Card type:<sup>*</sup>
+            <select name="card_type" id="card_type" required>
+                <option value="">--select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+        </p>
+        <p>
+            card number<sup>*</sup> <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            expiration date<sup>*</sup><input type="date" name="expiration_date" id="expiration_date" required>
+        </p>
+        <p>
+            CVV<sup>*</sup><input type="password" name="CVV" id="CVV" required>
+        </p>
+        <input type="submit" value="Pay now">
+    </form>
+    </div>
+</body>
+</html>
